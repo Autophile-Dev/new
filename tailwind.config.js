@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {
       maxWidth:{
@@ -36,6 +37,13 @@ module.exports = {
         '900px' : '900px',
       },
     },
+
   },
-  plugins: [],
+  
+  plugins: [
+    require('tailwindcss-transform')(['responsive']),
+    require('@kamona/tailwindcss-perspective'),
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

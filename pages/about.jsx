@@ -25,7 +25,8 @@ const about = () => {
                             the digital marketing space.
                         </p>
                     </div>
-                    <div className="w-full lg:w-1/3 shadow-lg lg:max-w-lg md:w-1/2">
+
+                    <div className="w-full h-full flex flex-col lg:w-1/3 shadow-lg lg:max-w-lg md:w-1/2">
                         <Image src="/images/hero.jpg" className="object-cover object-center rounded-lg " alt="Hero img" width={700} height={500} />
                     </div>
                 </div>
